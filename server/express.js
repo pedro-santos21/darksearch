@@ -9,7 +9,8 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded({ extended: true })) // to support URL-encoded bodies
 
 // Routes
-app.use('/api', require("./routes/Api.routes"));
+const apiRoutes = require("./routes/Api.routes");
+app.use(apiRoutes.routerPrefix, apiRoutes.router);
 
 // Start server
 app.listen(PORT, () => {
