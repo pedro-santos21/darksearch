@@ -1,6 +1,8 @@
 const express=require('express')
 const router=express.Router()
 
+const searchService = require('../services/Search.services');
+
 const routerPrefix = '/api/'
 
 // search
@@ -16,7 +18,10 @@ router.post('/search', (req, res)=>{
 
 router.get("/results", (req, res) => {
     const query = req.query.query;
-    res.send(`Search results for: "${query}"`);
+
+    index = searchService.SearchForQuery(query);
+
+    res.send(`${index.length} results for "${query}".`);
 })
 
 module.exports={
