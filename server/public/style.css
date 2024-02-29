@@ -1,0 +1,24 @@
+/* GOONERS... RISE UP... */
+@font-face {
+    font-family: 'Encode';
+    src: url('fonts/EncodeSans_Condensed-Bold.ttf');
+}
+
+#title{
+    font-family: 'Encode';
+    font-size: 200px;
+    color: white;
+    text-align: center;
+}
+#bgvid{ /* adolf hitler is inside of me */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 950px;
+    width: 2000px;
+    z-index: -1;
+}
+
+body{
+    background-color: black;
+}

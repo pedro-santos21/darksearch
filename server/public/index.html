@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Search</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Dark Search 2024</p>
+    <h1 id="title">DARKSEARCH</h1>
     <form action="/api/search" method="POST">
         <input type="text" id="query" name="query" value=""><br/>
         <input type="submit" value="Search">
     </form>
+    <video autoplay muted loop id="bgvid">
+        <source src="static/pingas.mp4" type="video/mp4">
+    </video>
 </body>
 </html>
